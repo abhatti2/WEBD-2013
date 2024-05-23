@@ -1,0 +1,56 @@
+body {
+  /* Alegreya is a Google font. Link tag for font in HTML head tag. */
+  font-family: 'Alegreya', serif;
+  font-size: 20px;  
+
+  /* Horizontally centre the body. */
+  margin: 20px auto;
+
+  /* Defaults "full" width. Media queries below will change this based on screen width. */
+  width: 1230px;
+}
+
+/* No margin above photographer name links. */
+h3.photographer {
+  margin: 0 0 2em 0;
+}
+
+#gallery {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, 300px); 
+  
+  grid-gap: 10px;
+  margin-bottom: 2em;
+}
+
+.category {
+  text-align: center;
+}
+
+/* For screen widths less than 1270px (but greater than 659px) switch to a two column layout. */ 
+@media only screen and (max-width: 1269px) {
+  body {
+      width: 620px;
+  }
+}
+ 
+@media only screen and (max-width: 659px) {
+  body {
+      width: 300px;
+  }
+}
+
+.local-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
